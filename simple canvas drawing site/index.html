@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyareth's Drawing app</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="toolbar">
+            <h1>Draw</h1>
+            <label for="stroke">Pencil Color</label>
+            <input type="color" name="Stroke" id="stroke">
+            <label for="background">background</label>
+            <div class="flex">
+                <input type="color" name="background" id="background1">
+                <input type="color" name="background" id="background2">
+            </div>
+            <label for="lineWidth">Line Width</label>
+            <input type="range" name="lineWidth" id="lineWidth" value="5">
+            <button id="clear">Clear</button>
+        </div>
+        <div class="drawing-board">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
